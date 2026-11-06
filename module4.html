@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html exercise - Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <!-- Form 1: Post  -->
+     <form method="POST" action="PATH_TO_YOUR_SERVER_ENDPOINT">
+        
+        <label>First Name:</label>
+        <input type="text" name="first_name" required><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+
+        <label>Date of birth:</label>
+        <input type="date" name="date_of_birth" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Register">
+
+        </form>
+
+        <hr>
+
+        <h2>Search Form</h2>
+        <!-- Form 2: Get -->
+
+        <form method="GET" action="PATH_TO_YOUR_SEARCH_ENDPOINT">
+           
+            <label for="search Name">Search:</label>
+           
+            <input type="text" name="search" name="search _name" required><br><br>
+            
+            <input type="submit" value="Search">
+        </form>
+</body>
+</html>
